@@ -1,0 +1,61 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "ql co so op"
+                        "ad ad ad ad"
+                        "cp cp cp cp";
+    justify-items: center;
+    background-color: black;
+    color: white;
+}
+
+footer ul {
+    padding-left: 0px;
+}
+
+footer li {
+    text-indent: 1rem;
+    padding: 0.3em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer li:first-child {
+    font-weight: 900;
+    text-indent: 0px;
+    color: white;
+}
+
+footer li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer li:first-child:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+
+footer ul:first-child {
+    grid-area: ql;
+}
+
+footer ul:nth-child(2) {
+    grid-area: co;
+}
+
+footer ul:nth-child(3) {
+    grid-area: so;
+}
+
+footer ul:last-child {
+    grid-area: op;
+}
+
+address {
+    grid-area: ad;
+}
+
+footer p {
+    grid-area: cp;
+}

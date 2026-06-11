@@ -1,0 +1,16 @@
+.DashboardHeader {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    margin: 10px 1em;
+    width: calc(100% - 2em);
+    border-radius: 1em;
+    box-shadow: 2px 2px 10px 2px;
+    position: fixed;
+}
+
+.DashboardHeader h1 {
+    color: white;
+}

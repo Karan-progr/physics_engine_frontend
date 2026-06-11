@@ -1,0 +1,148 @@
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 50px 0px;
+}
+
+.SignUp {
+    color: black;
+    text-align: center;
+    background-color: rgba(107, 255, 107, 0.692);
+    display: inline-block;
+    align-self: center;
+    padding: 1rem;
+    border-radius: 1em;
+    border: 2px solid black;
+}
+
+.SignUp:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30%;
+    max-width: 300px;
+}
+
+main form input, textarea {
+    padding: 0.6em;
+    border-radius: 0.4em;
+    resize: none;
+    width: 90%;
+    border: 1px solid;
+}
+
+main form .form_inp {
+    position: relative;
+}
+
+main form label {
+    position: absolute;
+    top: 0.4em;
+    left: 0.5em;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+main form label:hover {
+    cursor: text;
+}
+
+main form input:focus-within + label, main form input:not(:placeholder-shown) + label{
+    color: rgb(0, 0, 0);
+    top: -0.5em;
+}
+
+main form textarea:focus + label{
+    color: rgb(0, 0, 0);
+    top: -0.5em;
+}
+ 
+main form input:focus, textarea:focus {
+    outline: 2px solid rgba(76, 204, 76, 0.692);
+    border: none;
+}
+
+.contributeForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    border-top: 1px solid black;
+}
+
+.contributeForm .msg {
+    align-self: flex-start;
+}
+
+.contributeForm p {
+    width: 40ch;
+    font-size: 1.4em;
+    text-indent: 2em;
+    text-align: justify;
+    margin-right: 2em;
+}
+
+.contributeForm button {
+    width: 10em;
+    align-self: center;
+    background-color: rgba(107, 255, 107, 0.692);
+    padding: 0.8em;
+    border-radius: 0.8em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.toggleMenu {
+    align-self: center;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    padding: 20px;
+    margin: 1em;
+    width: 750px;
+    border-radius: 2em;
+}
+
+.togMenu {
+    display: flex;
+    flex-direction: column;
+    /* background-image: linear-gradient(white 20%, black 30%,white);
+    width: fit-content; */
+}
+
+.toggleMenu li button {
+    border: 1px solid white;
+    margin: 0px;
+    padding: 0.5em 1em;
+    width: 6em;
+    text-align: center;
+    border-radius: 1em;
+    font-size: 1em;
+    background-color: transparent;
+    color: white;
+}
+
+.toggleContent {
+    text-align: center;
+    font-size: 2em;
+    height: 4em;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.toggleMenu .active {
+    transform: scale(1.1);
+    border: 3px solid rgba(107, 255, 107, 0.692);
+}
+
+.toggleMenu button:hover {
+    cursor: pointer;
+}
